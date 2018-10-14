@@ -30,7 +30,7 @@ int main()
       }
     
     int sum=0;
-    if (nomer[0]+nomer[1]>0)  
+    if (nomer[0]!=-1 and nomer[1]!=-1)  
       {
         for (int i=nomer[0]; i<nomer[1]; i++)
          {
