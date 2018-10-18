@@ -27,11 +27,11 @@ int main( )
       {
       	for (int j=0; j<m; j++) 
       	  {
-      	  	if (matr[j][i]==0) 
-				{
-					stolb0++;
-					break;
-		      	}
+      	      if (matr[j][i]==0) 
+		{
+		   stolb0++;
+		   break;
+		}
       	  }
       }
      cout << stolb0 << " - количесвто столбцов, где есть хотя бы один нулевой элемент" << endl; 
