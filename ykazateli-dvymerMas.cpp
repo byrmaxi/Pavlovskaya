@@ -40,12 +40,11 @@ int main( )
       }
      cout << stolb0 << " - количесвто столбцов, где есть хотя бы один нулевой элемент" << endl; 
      
-     int max_odinakov=0,odinakov,iodinakov;
+     int max_odinakov=0,odinakov=0,iodinakov=0;
      for (int i=0; i<m; i++)
        {
        	for (int j=0; j<(n-1); j++)
        	  {
-       	  	odinakov=0;
        	  	if (matr[i][j]==matr[i][j+1]) odinakov++;
        	  }
        	if  (odinakov>max_odinakov)
@@ -53,6 +52,7 @@ int main( )
        	  	max_odinakov=odinakov;
        	  	iodinakov=i;
        	  }
+	odinakov=0;     
        }
      cout <<  " В строке под номером " << iodinakov << " находится самая длинная серия одинаковых элементов";  
     
