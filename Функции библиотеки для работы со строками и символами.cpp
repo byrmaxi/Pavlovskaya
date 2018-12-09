@@ -24,30 +24,29 @@ int main()
    char r;
    while(fin)
    {
-   	nomerStr++;
-   	char proverka [70];
+    nomerStr++;
+    char proverka [70];
     fin.getline(proverka, 70); 
     for (int i=0; i<=strlen(proverka); i++)
       {
-      		  
-     if (i==strlen(proverka)-1)
-       {
+       if (i==strlen(proverka)-1)
+        {
        	 if (proverka[i]=='e' or proverka[i]=='y' or proverka[i]=='u' or proverka[i]=='i'
 	      or proverka[i]=='o' or proverka[i]=='a' )
 	        {
 	        	 r=getch();
-      	 	  	   	  int j=i;
-      	 	  	   	  int nachalo;
-      	 	  	   	  while (proverka[j]!=' ')
-      	 	  	   	    {	 
-      	 	  	   	    	 nachalo=j;
-      	 	  	   	    	 j--;
-					    } 
+      	 	  	 int j=i;
+      	 	  	 int nachalo;
+      	 	  	 while (proverka[j]!=' ')
+      	 	  	   {	 
+      	 	  	      nachalo=j;
+      	 	  	      j--;
+			    } 
 					 
-					 int konecc=i;   
-					 videlenie (nachalo,nomerStr, konecc, proverka);
+			 int konecc=i;   
+			videlenie (nachalo,nomerStr, konecc, proverka);
 	        }   
-		 }
+	 }
 	   
       	if (proverka[i]==' ')
       	 {
@@ -60,19 +59,19 @@ int main()
       	 	  	   	  int nachalo;
       	 	  	   	  while (proverka[j]!=' ')
       	 	  	   	    {	 
-      	 	  	   	    	 nachalo=j;
+      	 	  	   	    	nachalo=j;
       	 	  	   	    	 j--;
-					    } 
+				     } 
 					 
-					 int konecc=i-2;   
-					 videlenie (nachalo,nomerStr, konecc, proverka);
-				   }
-			  }
+				    int konecc=i-2;   
+			            videlenie (nachalo,nomerStr, konecc, proverka);
+			    }
+		  }
 			  
-			  else 
-			    {
-			     if (ispunct(proverka[i-1])==0 ) 
-      	     	  {
+	          else 
+	           {
+	             if (ispunct(proverka[i-1])==0 ) 
+      	     	      {
       	 	    	if (proverka [i-1]=='e' or proverka [i-1]=='y' or proverka [i-1]=='u' or proverka [i-1]=='i' or proverka [i-1]=='o' or proverka [i-1]=='a')
       	 	  	    {
       	 	  	      r=getch();
@@ -82,14 +81,14 @@ int main()
       	 	  	   	    {	 
       	 	  	   	    	 nachalo=j;
       	 	  	   	    	 j--;
-					    } 
+				    } 
 					 
 					 int konecc=i-1;   
 					 videlenie (nachalo,nomerStr, konecc, proverka);
-				    }
 			      }
+		        }
 			    	
-				}
+		     }
       	 	  
 		 }
 	  }
