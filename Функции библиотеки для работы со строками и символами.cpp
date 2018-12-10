@@ -41,6 +41,7 @@ int main()
       	 	  	 int nachalo;
       	 	  	 while (proverka[j]!=' ')
       	 	  	   {	 
+			      if (j==0) {break;}  	 
       	 	  	      nachalo=j;
       	 	  	      j--;
 			    } 
