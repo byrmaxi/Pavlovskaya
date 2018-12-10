@@ -62,6 +62,7 @@ int main()
       	 	  	   	  int nachalo;
       	 	  	   	  while (proverka[j]!=' ')
       	 	  	   	    {	 
+					if (j==0) {break;}  
       	 	  	   	    	nachalo=j;
       	 	  	   	    	 j--;
 				     } 
@@ -82,7 +83,8 @@ int main()
       	 	  	   	  int j=i-1;
       	 	  	   	  int nachalo;
       	 	  	   	  while (proverka[j]!=' ')
-      	 	  	   	    {	 
+      	 	  	   	    {	
+					 if (j==0) {break;}  
       	 	  	   	    	 nachalo=j;
       	 	  	   	    	 j--;
 				    } 
