@@ -22,6 +22,7 @@ int main()
    fin.open("gaga.dat", ios_base::in);
    int nomerStr=-1;
    char r;
+   int glasn;
    while(fin)
    {
     nomerStr++;
@@ -34,6 +35,7 @@ int main()
        	 if (proverka[i]=='e' or proverka[i]=='y' or proverka[i]=='u' or proverka[i]=='i'
 	      or proverka[i]=='o' or proverka[i]=='a' )
 	        {
+		         glasn++;
 	        	 r=getch();
       	 	  	 int j=i;
       	 	  	 int nachalo;
@@ -54,6 +56,7 @@ int main()
       	 	  {
       	 	  	if (proverka [i-2]=='e' or proverka [i-2]=='y' or proverka [i-2]=='u' or proverka [i-2]=='i' or proverka [i-2]=='o' or proverka [i-2]=='a')
       	 	  	   {
+				  glasn++;
       	 	  	   	  r=getch();
       	 	  	   	  int j=i-2;
       	 	  	   	  int nachalo;
@@ -74,7 +77,8 @@ int main()
       	     	      {
       	 	    	if (proverka [i-1]=='e' or proverka [i-1]=='y' or proverka [i-1]=='u' or proverka [i-1]=='i' or proverka [i-1]=='o' or proverka [i-1]=='a')
       	 	  	    {
-      	 	  	      r=getch();
+				  glasn++;
+      	 	  	          r=getch();
       	 	  	   	  int j=i-1;
       	 	  	   	  int nachalo;
       	 	  	   	  while (proverka[j]!=' ')
@@ -95,7 +99,7 @@ int main()
 
    };
           
-
+  cout << "Количество гласных в тексте = " << glasn;
 }
  
 void videlenie (int x,int y,int konec,char text[70])
